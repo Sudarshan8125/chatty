@@ -1,27 +1,35 @@
 # Chatty 💬
 
-A full-stack realtime chat application built with the MERN stack, Socket.io, and modern UI tools.
-
-![Demo App](/frontend/public/screenshot-for-readme.png)
+A full-stack realtime chat application built with the MERN stack and Socket.io.
 
 ## Features
 
-- 🔐 Authentication & Authorization with JWT
+- 🔐 JWT Authentication & Authorization
 - 💬 Real-time messaging with Socket.io
 - 🟢 Online user status tracking
 - 🖼️ Image sharing via Cloudinary
-- 🎨 Beautiful UI with TailwindCSS + DaisyUI (30+ themes)
-- 📦 Global state management with Zustand
-- 🛡️ Robust error handling (server & client)
+- 🎨 30+ themes with TailwindCSS + DaisyUI
+- 📦 State management with Zustand
 
 ## Tech Stack
 
-**Frontend:** React, Vite, TailwindCSS, DaisyUI, Zustand, Socket.io-client  
-**Backend:** Node.js, Express, MongoDB, Mongoose, Socket.io, JWT, Cloudinary
+| Layer | Tools |
+|-------|-------|
+| Frontend | React, Vite, TailwindCSS, DaisyUI, Zustand |
+| Backend | Node.js, Express, MongoDB, Socket.io |
+| Auth | JWT, bcrypt |
+| Media | Cloudinary |
 
-## Setup
+## Getting Started
 
-### Environment Variables
+### 1. Clone
+
+```bash
+git clone https://github.com/Sudarshan8125/chatty.git
+cd chatty
+```
+
+### 2. Environment Variables
 
 Create a `.env` file in the `backend` directory:
 
@@ -37,14 +45,11 @@ CLOUDINARY_API_SECRET=...
 NODE_ENV=development
 ```
 
-### Install & Run
+### 3. Install & Run
 
 ```bash
-# Install all dependencies (backend + frontend)
-npm run build
-
-# Start the app
-npm start
+npm run build   # installs deps for backend + frontend, builds frontend
+npm start        # starts the server
 ```
 
-The app runs on `http://localhost:5001` by default.
+App runs at `http://localhost:5001`.
